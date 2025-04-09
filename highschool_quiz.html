@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>高校数学 問題演習｜Discover Math</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.8;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2rem;
+      color: #1976d2;
+      border-bottom: 3px solid #1976d2;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 1.4rem;
+      color: #42a5f5;
+      margin-top: 30px;
+    }
+    button {
+      background-color: #1976d2;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1565c0;
+    }
+    .answer {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+    nav {
+      background-color: #1976d2;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    nav a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+    }
+  </style>
+  <script>
+    function showAnswer(id, tex) {
+      document.getElementById('answer' + id).innerHTML = tex;
+      MathJax.typeset();
+    }
+  </script>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">🏠 トップ</a>
+  <a href="highschool_math.html">🧮 高校数学に戻る</a>
+</nav>
+
+<h1>高校数学 問題演習</h1>
+
+<h2>問題1</h2>
+<p>\( x^2 - 5x + 6 = 0 \) の解を求めよ。</p>
+<button onclick="showAnswer(1, '\\(x=2, 3\\)')">答えを見る</button>
+<div id="answer1" class="answer"></div>
+
+<h2>問題2</h2>
+<p>\( 2x + 3 > 7 \) を解け。</p>
+<button onclick="showAnswer(2, '\\(x > 2\\)')">答えを見る</button>
+<div id="answer2" class="answer"></div>
+
+<h2>問題3</h2>
+<p>\( (2 + 3i)(1 - i) \) を計算せよ。</p>
+<button onclick="showAnswer(3, '\\(5 + i\\)')">答えを見る</button>
+<div id="answer3" class="answer"></div>
+
+<h2>問題4</h2>
+<p>\( f(x) = x^3 \) の導関数を求めよ。</p>
+<button onclick="showAnswer(4, '\\(f\'(x) = 3x^2\\)')">答えを見る</button>
+<div id="answer4" class="answer"></div>
+
+<h2>問題5</h2>
+<p>\( f(x) = \sin x \) の導関数を求めよ。</p>
+<button onclick="showAnswer(5, '\\(f\'(x) = \cos x\\)')">答えを見る</button>
+<div id="answer5" class="answer"></div>
+
+<h2>問題6</h2>
+<p>\( \int x \, dx \) を求めよ。</p>
+<button onclick="showAnswer(6, '\\(\\frac{1}{2}x^2 + C\\)')">答えを見る</button>
+<div id="answer6" class="answer"></div>
+
+<h2>問題7</h2>
+<p>\( \int_0^1 (2x + 1) \, dx \) を求めよ。</p>
+<button onclick="showAnswer(7, '\\(2\\)')">答えを見る</button>
+<div id="answer7" class="answer"></div>
+
+<h2>問題8</h2>
+<p>二次関数 \( y = x^2 - 4x + 5 \) の頂点を求めよ。</p>
+<button onclick="showAnswer(8, '\\((2, 1)\\)')">答えを見る</button>
+<div id="answer8" class="answer"></div>
+
+<h2>問題9</h2>
+<p>\( x^2 - 2x - 3 \geq 0 \) を解け。</p>
+<button onclick="showAnswer(9, '\\(x \\leq -1 \\quad \\text{または} \\quad x \\geq 3\\)')">答えを見る</button>
+<div id="answer9" class="answer"></div>
+
+<h2>問題10</h2>
+<p>複素数 \( z = 1 + i \) の絶対値を求めよ。</p>
+<button onclick="showAnswer(10, '\\(\\sqrt{2}\\)')">答えを見る</button>
+<div id="answer10" class="answer"></div>
+
+</body>
+</html>
